@@ -127,9 +127,9 @@ fi
 
 chmod ChiefCommander:shravan /home/ChiefCommander
 touch attendance-report.txt /home/ChiefCommander
-cat attendance-record-Army > /home/ChiefCommander/attendance-report.txt
-cat attendance-record-Navy > /home/ChiefCommander/attendance-report.txt
-cat attendance-record-AirForce > /home/ChiefCommander/attendance-report.txt
+final-attendance attendance-record-Army > /home/ChiefCommander/attendance-report.txt
+final-attendance attendance-record-Navy > /home/ChiefCommander/attendance-report.txt
+final-attendance attendance-record-AirForce > /home/ChiefCommander/attendance-report.txt
 
 
 
