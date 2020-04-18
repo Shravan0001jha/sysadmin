@@ -1,5 +1,3 @@
-# sysadmin
-task system administration
 ########-----THE REPOSITORIES WILL BE UPTADED BY CRONTAB-------##########
 sudo groupadd own
 userGenerate -m ChiefCommander
@@ -77,9 +75,9 @@ done
 
 
 
-attendace >> attendance-record-Army.txt
-attendance >> attendance-record-Navy.txt
-attendance >> attendance-record-AirForce.txt
+attendance >> /home/ArmyGeneral/attendance-record-Army.txt
+attendance >> /home/NavyMarshal/attendance-record-Navy.txt
+attendance >> /home/AirForceChief/attendance-record-AirForce.txt
 
 
 
@@ -114,4 +112,26 @@ else if [ $var -eq 7 ]
 then
 cat attendace-record-Army | grep date --date="last sunday"
 fi
+
+
+
+
+
+
+
+#####--------HACKER MODE------#########################
+
+
+
+
+
+chmod ChiefCommander:shravan /home/ChiefCommander
+touch attendance-report.txt /home/ChiefCommander
+cat attendance-record-Army > /home/ChiefCommander/attendance-report.txt
+cat attendance-record-Navy > /home/ChiefCommander/attendance-report.txt
+cat attendance-record-AirForce > /home/ChiefCommander/attendance-report.txt
+
+
+
+
 
